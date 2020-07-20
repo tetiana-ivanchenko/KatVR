@@ -57,3 +57,13 @@
     color: #929292;
   }
 }
+
+@media screen and (max-width: 900px) {
+  .interested {
+    text-align: center;
+    height: 100%;
+    &__block {
+      flex-direction: column;
+    }
+  }
+}

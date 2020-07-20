@@ -3,17 +3,33 @@
   justify-content: center;
   padding: 0 10%;
   height: 639px;
+  overflow: hidden;
   background: linear-gradient(124.02deg, #191536 0%, #000 77.34%);
+  @media screen and (max-width: 1050px) {
+    flex-wrap: wrap;
+    height: 100%;
+    width: 80%;
+  }
   &__label {
     @extend %title;
     margin-top: 100px;
     margin-bottom: 0;
+    @media screen and (max-width: 1050px) {
+      text-align: center;
+      margin-top: 10px;
+    }
     &--accent {
       @extend %title-accent;
     }
   }
 
   &__img {
+    @media screen and (max-width: 1050px) {
+      display: flex;
+      align-items: center;
+      left: 0;
+      width: 80%;
+    }
     position: relative;
     left: 10%;
     transition: 2s;
@@ -32,6 +48,10 @@
     position: relative;
     left: -50px;
     top: 50px;
+    @media screen and (max-width: 1050px) {
+      left: 0;
+      margin-top: 50px;
+    }
   }
 
   &__name {
@@ -44,6 +64,11 @@
     color: #fff;
     margin: 0;
     text-align: left;
+    @media screen and (max-width: 1050px) {
+      white-space: pre-wrap;
+      margin-left: 50px;
+      width: 80%;
+    }
   }
 
   &__text {
@@ -58,6 +83,9 @@
       width: 47px;
       height: 1px;
       background-color: #05c2df;
+    }
+    @media screen and (max-width: 1050px) {
+      padding: 0 50px;
     }
   }
 
@@ -79,5 +107,10 @@
     line-height: 130%;
     color: #fff;
     margin-top: 53px;
+    @media screen and (max-width: 1050px) {
+      position: relative;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
   }
 }
