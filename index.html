@@ -4,14 +4,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Title</title>
+  <title>KatVR</title>
   <link rel="stylesheet" href="./styles/main.css">
 </head>
 
 <body>
   <header class="header">
-    <nav class="nav">
-      <ul class="nav__list container">
+    <label for="header__icon">
+      <img
+        src="images/Group.png"
+        class="header__icon"
+        alt="burger logo"
+      >
+    </label>
+    <input
+      id="header__icon"
+      class="header__check"
+      type="checkbox"
+    >
+    <nav class="header__nav container">
+      <ul class="nav__list">
         <li class="nav__item">
           <img
             src="images/logo.png"
@@ -25,30 +37,30 @@
             <option> Ru </option>
           </select>
         </li>
-        <li class="nav__item"><a href="" class="nav__link">About</a></li>
-        <li class="nav__item"><a href="" class="nav__link">Tech</a></li>
-        <li class="nav__item"><a href="" class="nav__link">Benefits</a></li>
-        <li class="nav__item"><a href="" class="nav__link">Contact</a></li>
+        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+        <li class="nav__item"><a href="#tech" class="nav__link">Tech</a></li>
+        <li class="nav__item"><a href="#benefits" class="nav__link">Benefits</a></li>
+        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
         <li class="nav__item"><button class="nav__button">Buy Now</button></li>
       </ul>
     </nav>
     <div class="header__main container">
-      <div class="header__content">
-        <p class="header__title">THE NEW START OF</p>
-        <p class="header__title--accent">VR LOCOMOTION</p>
-        <p class="header__text">Discover the most comprehensive VR<br>
+      <div class="main__content">
+        <p class="main__title">THE NEW START OF</p>
+        <p class="main__title main__title--accent">VR LOCOMOTION</p>
+        <p class="main__text">Discover the most comprehensive VR<br>
           Locomotion system, and unlock infinite<br>
           motion in any games on any platforms!</p>
-        <p class="header__price">1200$</p>
-        <button class="button__play">Play Video</button>
+        <p class="main__price">1200$</p>
+        <button class="main__button">Play Video</button>
       </div>
       <img
         src="images/main.png"
         alt=""
-        class="header__img"
+        class="main__img"
       >
     </div>
-    <ul class="foot__list">
+    <ul class="header__foot container">
       <li class="foot__item"><a href="" class="foot__link">FAQ</a></li>
       <li class="foot__item"><a href="" class="foot__link">Help</a></li>
       <li class="foot__item"><a href="" class="foot__link is-active">More</a></li>
@@ -56,12 +68,12 @@
       <li class="foot__item"><a href="" class="foot__link">Next</a></li>
     </ul>
   </header>
-  <div class="interested">
-    <div class="interested__title">
+  <div class="interested" id="interested">
+    <div class="interested__title container">
       <p class="interested__label">MORE THAN <span class="interested__label--accent">GAMING!</span></p>
       <p class="interested__descr">This also made for people who are interested in...</p>
     </div>
-    <div class="interested__block">
+    <div class="interested__block container">
       <div class="interested__card">
         <img
           src="images/vc1.png"
@@ -119,8 +131,8 @@
       </div>
     </div>
   </div>
-  <div class="about">
-    <div class="about__title">
+  <div class="about" id="about">
+    <div class="about__title container">
       <div class="about__box">
         <p class="about__name">About <span class="about__name--accent">product</span></p>
         <p class="about__text">KAT loco is a foot-based VR locomotion system that gives complete physical<br>
@@ -129,7 +141,7 @@
       </div>
       <button class="button__play">Play Video</button>
     </div>
-    <div class="about__vr">
+    <div class="about__vr container">
       <div class="vr__left">
         <p class="left__par">Uniwersally<br>compatible</p>
         <p class="left__par">User friendly<br> hardware</p>
@@ -148,7 +160,7 @@
         <p class="right__par">Multifunctional<br> software</p>
       </div>
     </div>
-    <div class="about__kat">
+    <div class="about__kat container">
       <img
         src="images/nice.png"
         alt="person who game VR"
@@ -165,10 +177,10 @@
       </div>
     </div>
   </div>
-  <div class="tech">
-    <p class="tech__label"> Tech <span class="tech__label--accent"> specs </span>
+  <div class="tech" id="tech">
+    <p class="tech__label container"> Tech <span class="tech__label--accent"> specs </span>
     </p>
-    <div class="tech__block">
+    <div class="tech__block container">
       <div class="tech__card">
         <img
           src="images/tech.png"
@@ -211,7 +223,7 @@
       </div>
     </div>
   </div>
-  <div class="benefit">
+  <div class="benefit" id="benefits">
     <div class="benefit__content">
       <p class="benefit__label">our <span class="benefit__label--accent">benefits</span></p>
       <div class="benefit__block">
@@ -237,74 +249,119 @@
       class="benefit__img"
     >
   </div>
-  <div class="contact">
-    <form action=""  class="contact__form" >
-      <input
-        class="contact__input"
-        type="text"
-        placeholder="Name*"
-      >
-      <input
-        class="contact__input"
-        type="email"
-        placeholder="Email*"
-      >
-      <input
-        class="contact__input"
-        type="phone"
-        placeholder="Phone*"
-      >
-      <input
-        class="contact__input"
-        type="textarea"
-        placeholder="Message*"
-      >
-    </form>
-    <div class="info">
-      <p class="info__top">Have any questions?</p>
-      <p class="info__title">GET IN <span class="info__title--accent">TOUCH</span></p>
-      <p class="info__text">Our manager will reply you within 15<br> minutes</p>
-      <a class="info__text" href="tel:+86-0571-86105373">+86-0571-86105373</a>
-      <a class="info__text" href="mailto:global@katvr.com">global@katvr.com</a>
-      <a class="info__text" href="mailto:overseas@katvr.com">overseas@katvr.com</a>
-      <button class="info__button">Contact Us</button>
+  <div class="contact" id="contact">
+    <div class="contact__contant container">
+      <form action=""  class="contact__form" >
+        <input
+          class="contact__input"
+          type="text"
+          placeholder="Name*"
+        >
+        <input
+          class="contact__input"
+          type="email"
+          placeholder="Email*"
+        >
+        <input
+          class="contact__input"
+          type="phone"
+          placeholder="Phone*"
+        >
+        <input
+          class="contact__input"
+          type="textarea"
+          placeholder="Message*"
+        >
+      </form>
+      <div class="info">
+        <p class="info__top">Have any questions?</p>
+        <p class="info__title">GET IN <span class="info__title--accent">TOUCH</span></p>
+        <p class="info__text">Our manager will reply you within 15<br> minutes</p>
+        <a class="info__text" href="tel:+86-0571-86105373">+86-0571-86105373</a>
+        <a class="info__text" href="mailto:global@katvr.com">global@katvr.com</a>
+        <a class="info__text" href="mailto:overseas@katvr.com">overseas@katvr.com</a>
+        <button class="info__button">Contact Us</button>
+      </div>
     </div>
   </div>
   <footer class="footer">
-    <img
-      src="images/logo.png"
-      alt=""
-    >
-    <ul class="footer__list">
-      <li class="footer__item"> <a href="" class="footer__link">Home </a></li>
-      <li class="footer__item"> <a href="" class="footer__link">About </a></li>
-      <li class="footer__item"> <a href="" class="footer__link">Tech </a></li>
-      <li class="footer__item"> <a href="" class="footer__link">Benefits </a></li>
-      <li class="footer__item"> <a href="" class="footer__link">Contact </a></li>
+    <ul class="footer__list container">
+      <img
+        src="images/logo.png"
+        alt=""
+      >
+      <li class="footer__item">
+        <a href="#home" class="footer__link">
+          Home
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="#about" class="footer__link">
+          About
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="#tech" class="footer__link">
+          Tech
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="#benefits" class="footer__link">
+          Benefits
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="#contact" class="footer__link">
+          Contact
+        </a>
+      </li>
+      <div class="footer__logos">
+        <a
+          href="https://www.facebook.com/"
+          target="_blank"
+          rel="noopener"
+        >
+          <img
+            src="images/fb.png"
+            alt="logo fb"
+            class="footer__logo"
+          >
+        </a>
+        <a
+          href="https://twitter.com/"
+          rel="noopener"
+          target="_blank"
+        >
+          <img
+            src="images/tw.png"
+            alt="logo twitter"
+            class="footer__logo"
+          >
+        </a>
+        <a
+          rel="noopener"
+          href="https://www.youtube.com/"
+          target="_blank"
+        >
+          <img
+            src="images/you.png"
+            alt="logo youtube"
+            class="footer__logo"
+          >
+        </a>
+        <a
+          href=""
+          target="_blank"
+          rel="noopener"
+        >
+          <img
+            src="images/ls.png"
+            alt="logo"
+            class="footer__logo"
+          >
+        </a>
+      </div>
     </ul>
-    <div class="footer__logos">
-      <a href="https://www.facebook.com/" target="_blank"><img
-        src="images/fb.png"
-        alt="logo fb"
-        class="footer__logo"
-      ></a>
-      <a href="https://twitter.com/" target="_blank"><img
-        src="images/tw.png"
-        alt="logo twitter"
-        class="footer__logo"
-      ></a>
-      <a href="https://www.youtube.com/" target="_blank"><img
-        src="images/you.png"
-        alt="logo youtube"
-        class="footer__logo"
-      ></a>
-      <a href="" target="_blank"><img
-        src="images/ls.png"
-        alt="logo"
-        class="footer__logo"
-      ></a>
-    </div>
-
   </footer>
   <script type="text/javascript" src="scripts/main.js"></script>
 </body>
