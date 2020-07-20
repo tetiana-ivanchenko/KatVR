@@ -23,6 +23,12 @@
   &__label {
     @extend %title;
     padding: 50px 0;
+    @media screen and (max-width:1050px) {
+      position: relative;
+      left: 50%;
+      transform: translate(-50%);
+      text-align: center;
+    }
 
     &--accent {
       @extend %title-accent;
