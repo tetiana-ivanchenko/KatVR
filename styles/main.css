@@ -502,6 +502,13 @@ h1 {
             align-items: center; }
   .tech__label {
     padding: 50px 0; }
+    @media screen and (max-width: 1050px) {
+      .tech__label {
+        position: relative;
+        left: 50%;
+        -webkit-transform: translate(-50%);
+                transform: translate(-50%);
+        text-align: center; } }
   .tech__name {
     font-family: "Roboto", sans-serif;
     font-size: 18px;
