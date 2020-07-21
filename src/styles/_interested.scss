@@ -3,9 +3,17 @@
   height: 622px;
   background: #05040b;
   padding: 0 10%;
+  @media screen and (max-width: 1050px) {
+    text-align: center;
+    height: 100%;
+  }
+
   &__block {
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: 1050px) {
+      flex-direction: column;
+    }
   }
 
   &__card {
@@ -13,6 +21,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-right: 10px;
+    @media screen and (max-width: 1050px) {
+      margin-bottom: 30px;
+    }
   }
 
   &__label {
@@ -55,15 +67,5 @@
   &__text {
     font-family: "Balsamiq Sans", sans-serif;
     color: #929292;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .interested {
-    text-align: center;
-    height: 100%;
-    &__block {
-      flex-direction: column;
-    }
   }
 }

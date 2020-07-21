@@ -5,7 +5,7 @@
   height: 639px;
   overflow: hidden;
   background: linear-gradient(124.02deg, #191536 0%, #000 77.34%);
-  @media screen and (max-width: 1050px) {
+  @media screen and (max-width: 1150px) {
     flex-wrap: wrap;
     height: 100%;
     width: 80%;
@@ -14,9 +14,9 @@
     @extend %title;
     margin-top: 100px;
     margin-bottom: 0;
-    @media screen and (max-width: 1050px) {
+    @media screen and (max-width: 1150px) {
       text-align: center;
-      margin-top: 10px;
+      margin-top: 50px;
     }
     &--accent {
       @extend %title-accent;
@@ -24,10 +24,11 @@
   }
 
   &__img {
-    @media screen and (max-width: 1050px) {
+    @media screen and (max-width: 1150px) {
       display: flex;
       align-items: center;
       left: 0;
+      top: -30px;
       width: 80%;
     }
     position: relative;
@@ -48,7 +49,7 @@
     position: relative;
     left: -50px;
     top: 50px;
-    @media screen and (max-width: 1050px) {
+    @media screen and (max-width: 1150px) {
       left: 0;
       margin-top: 50px;
     }
@@ -64,7 +65,7 @@
     color: #fff;
     margin: 0;
     text-align: left;
-    @media screen and (max-width: 1050px) {
+    @media screen and (max-width: 1150px) {
       white-space: pre-wrap;
       margin-left: 50px;
       width: 80%;
@@ -84,7 +85,7 @@
       height: 1px;
       background-color: #05c2df;
     }
-    @media screen and (max-width: 1050px) {
+    @media screen and (max-width: 1150px) {
       padding: 0 50px;
     }
   }
@@ -107,10 +108,8 @@
     line-height: 130%;
     color: #fff;
     margin-top: 53px;
-    @media screen and (max-width: 1050px) {
-      position: relative;
-      left: 50%;
-      transform: translate(-50%, 0);
+    @media screen and (max-width: 1150px) {
+      margin: 30% 15%;
     }
   }
 }

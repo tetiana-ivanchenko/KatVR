@@ -41,7 +41,7 @@
 
 .vr__center {
   background-image: url(../images/about.png);
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
   width: 515px;
   height: 463px;
@@ -58,8 +58,8 @@
     margin: 50px 0;
     position: relative;
     top: 100%;
-    width: 90%;
-    height: 100%;
+    width: 60%;
+    height: 60%;
   }
 }
 
@@ -67,7 +67,7 @@
   color: #fff;
   font-family: "Balsamiq Sans", sans-serif;
   position: relative;
-  left: 12%;
+  left: 10%;
   top: 120px;
   @media screen and (max-width: 1050px) {
     display: none;
@@ -78,9 +78,9 @@
   color: #fff;
   font-family: "Balsamiq Sans", sans-serif;
   position: relative;
-  left: 78%;
+  left: 80%;
   top: -825px;
-  @media screen and (max-width: 1050px) {
+  @media screen and (max-width: 1100px) {
     display: none;
   }
 }
@@ -88,7 +88,8 @@
 .vr__img {
   transition: 2s;
   @media screen and (max-width: 1050px) {
-    width: 90%;
+    width: 70%;
+    margin-top: 10%;
   }
   &:hover {
     transform: rotate(360deg);
@@ -127,7 +128,8 @@
   transition: 2s;
   width: 30%;
   @media screen and (max-width: 1050px) {
-    width: 100%;
+    width: 60%;
+    margin: 50px auto;
   }
   &:hover {
     transform: scale(1.2);
