@@ -795,7 +795,12 @@ h1 {
       color: #05c2df;
       text-shadow: 2px 0 10px #fff; }
   .footer__logo {
-    margin-right: 15px; }
+    margin-right: 15px;
+    -webkit-transition: 1s;
+    transition: 1s; }
+    .footer__logo:hover {
+      -webkit-transform: scale(1.5);
+              transform: scale(1.5); }
 
 body,
 html,
