@@ -342,7 +342,7 @@ h1 {
   overflow: hidden;
   height: 1443px;
   background: linear-gradient(143.64deg, #191536 -0.5%, #000 99.5%); }
-  @media screen and (max-width: 1050px) {
+  @media screen and (max-width: 1100px) {
     .about {
       text-align: center;
       height: 100%; } }
@@ -356,7 +356,7 @@ h1 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-    @media screen and (max-width: 1050px) {
+    @media screen and (max-width: 1100px) {
       .about__title {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -376,7 +376,7 @@ h1 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-    @media screen and (max-width: 1050px) {
+    @media screen and (max-width: 1100px) {
       .about__kat {
         top: 0;
         -webkit-box-orient: vertical;
@@ -404,7 +404,7 @@ h1 {
   top: -400px;
   -webkit-transform: translate(-50%);
           transform: translate(-50%); }
-  @media screen and (max-width: 1050px) {
+  @media screen and (max-width: 1100px) {
     .vr__center {
       margin: 50px 0;
       position: relative;
@@ -418,7 +418,7 @@ h1 {
   position: relative;
   left: 10%;
   top: 120px; }
-  @media screen and (max-width: 1050px) {
+  @media screen and (max-width: 1100px) {
     .vr__left {
       display: none; } }
 
@@ -435,7 +435,7 @@ h1 {
 .vr__img {
   -webkit-transition: 2s;
   transition: 2s; }
-  @media screen and (max-width: 1050px) {
+  @media screen and (max-width: 1100px) {
     .vr__img {
       width: 70%;
       margin-top: 10%; } }
@@ -465,7 +465,7 @@ h1 {
   -webkit-transition: 2s;
   transition: 2s;
   width: 30%; }
-  @media screen and (max-width: 1050px) {
+  @media screen and (max-width: 1100px) {
     .nice__img {
       width: 60%;
       margin: 50px auto; } }
@@ -750,7 +750,15 @@ h1 {
     border: none;
     font-family: "Balsamiq Sans", sans-serif;
     color: #fff;
-    margin-top: 50px; }
+    margin-top: 50px;
+    cursor: pointer;
+    -webkit-transition: 1s;
+    transition: 1s; }
+    .info__button:hover {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+      -webkit-box-shadow: 2px 2px 50px 2px rgba(161, 240, 242, 0.45);
+              box-shadow: 2px 2px 50px 2px rgba(161, 240, 242, 0.45); }
     @media screen and (max-width: 1050px) {
       .info__button {
         margin: 5% 50%;
