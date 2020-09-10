@@ -22,7 +22,7 @@
       class="header__check"
       type="checkbox"
     >
-    <nav class="header__nav container">
+    <nav class="header__nav container" id="menu">
       <ul class="nav__list">
         <li class="nav__item">
           <a href="#">
@@ -34,16 +34,20 @@
           </a>
         </li>
         <li class="nav__item">
-          <select class="nav__select">
-            <option> En </option>
-            <option> Ru </option>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <select class="select" name="language">
+            <option disabled>EN &#8595;</option>
+            <option value="EN">EN</option>
+            <option value="RU">RU</option>
           </select>
         </li>
         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
         <li class="nav__item"><a href="#tech" class="nav__link">Tech</a></li>
         <li class="nav__item"><a href="#benefits" class="nav__link">Benefits</a></li>
         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-        <li class="nav__item"><button class="nav__button">Buy Now</button></li>
+        <li class="nav__item"><a href="#contact" class="nav__link">
+          <button class="nav__button">Buy Now</button>
+        </a></li>
       </ul>
     </nav>
     <div class="header__main container">
@@ -62,10 +66,10 @@
         class="main__img"
       >
     </div>
-    <ul class="header__foot container">
+    <ul class="header__foot container" id="menu__foot">
       <li class="foot__item"><a href="" class="foot__link">FAQ</a></li>
       <li class="foot__item"><a href="" class="foot__link">Help</a></li>
-      <li class="foot__item"><a href="" class="foot__link is-active">More</a></li>
+      <li class="foot__item"><a href="#interested" class="foot__link is-active">More</a></li>
       <li class="foot__item"><a href="" class="foot__link">Previous</a></li>
       <li class="foot__item"><a href="" class="foot__link">Next</a></li>
     </ul>
@@ -243,7 +247,8 @@
         <p class="benefit__name">PC/VR INTEGRATED CONTROL PANEL</p>
         <p class="benefit__text">for ultimate user experience</p>
       </div>
-      <button class="benefit__button">Buy Now</button>
+      <button class="benefit__button" id="buy">Buy Now</button>
+
     </div>
     <img
       src="images/benefit.png"
@@ -294,7 +299,7 @@
       </div>
     </form>
   </div>
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <ul class="footer__list container">
       <a href="#">
         <img
@@ -303,7 +308,7 @@
         >
       </a>
       <li class="footer__item">
-        <a href="#home" class="footer__link">
+        <a href="#about" class="footer__link">
           Home
         </a>
       </li>

@@ -172,13 +172,6 @@ h1 {
     color: #05c2df;
     text-shadow: 2px 0 10px #fff; }
 
-.nav__select {
-  margin-right: 300px;
-  margin-left: 10px; }
-  @media screen and (max-width: 1100px) {
-    .nav__select {
-      margin: 0; } }
-
 .nav__button {
   background: #05c2df;
   border-radius: 4px;
@@ -268,6 +261,68 @@ h1 {
     position: absolute;
     top: 25px;
     right: 30%; }
+
+.select {
+  display: block;
+  width: 40px;
+  position: relative;
+  color: #fff;
+  left: -50px; }
+
+.new-select {
+  position: relative;
+  border: 1px solid #ced4da;
+  color: #fff;
+  padding: 2px;
+  width: 40px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+.new-select__list {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  border: 1px solid #ced4da;
+  cursor: pointer;
+  width: 44px;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+.new-select__list.on {
+  display: block; }
+
+.new-select__item span {
+  display: block;
+  padding: 10px 15px; }
+
+.new-select__item span:hover {
+  color: #12b223; }
+
+.new-select:after {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 9px;
+  top: 9px;
+  background: url("path-to-image") no-repeat right center/cover;
+  opacity: 0.6;
+  -webkit-transition: all 0.27s ease-in-out;
+  transition: all 0.27s ease-in-out;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg); }
+
+.new-select.on:after {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg); }
 
 .interested {
   overflow: hidden;
@@ -762,6 +817,20 @@ h1 {
     @media screen and (max-width: 1050px) {
       .info__button {
         margin: 5% 15%; } }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 0;
+  -webkit-text-fill-color: #929292;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 174, 255, 0.04) 50%, rgba(255, 255, 255, 0) 51%, rgba(0, 174, 255, 0.03) 100%); }
 
 .footer {
   height: 100px;
