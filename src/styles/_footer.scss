@@ -1,0 +1,38 @@
+.footer {
+  height: 100px;
+  background: #000;
+  padding: 0 10%;
+  @media screen and (max-width: 1050px) {
+    display: none;
+  }
+
+  &__list {
+    position: relative;
+    top: 10px;
+    display: flex;
+    list-style: none;
+    color: #f2f2f2;
+    justify-content: space-between;
+  }
+
+  &__link {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-family: "Balsamiq Sans", sans-serif;
+    transition: 0.3s;
+    font-size: 16px;
+    &:hover {
+      position: relative;
+      color: #05c2df;
+      text-shadow: 2px 0 10px #fff;
+    }
+  }
+
+  &__logo {
+    margin-right: 15px;
+    transition: 1s;
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+}

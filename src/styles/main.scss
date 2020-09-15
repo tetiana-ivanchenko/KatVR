@@ -1,7 +1,39 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "header";
+@import "interested";
+@import "about";
+@import "tech";
+@import "benefit";
+@import "contact";
+@import "footer";
+
+body,
+html,
+li,
+ul,
+div,
+a {
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
 
 body {
-  background: $c-gray;
+  background: #05040b;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+button {
+  cursor: pointer;
+  transition: 1s;
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 50px 2px rgba(161,240,242,0.45);
+  }
 }

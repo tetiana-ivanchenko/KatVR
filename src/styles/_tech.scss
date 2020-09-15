@@ -1,0 +1,62 @@
+.tech {
+  padding: 0 10%;
+  height: 690px;
+  background: #05040b;
+  overflow: hidden;
+  @media screen and (max-width:1050px) {
+    height: 100%;
+  }
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width:1050px) {
+      flex-direction: column;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__label {
+    @extend %title;
+    padding: 50px 0;
+    @media screen and (max-width:1050px) {
+      position: relative;
+      left: 50%;
+      transform: translate(-50%);
+      text-align: center;
+    }
+
+    &--accent {
+      @extend %title-accent;
+    }
+  }
+
+  &__name {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    line-height: 23px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__text {
+    font-family: "Balsamiq Sans", sans-serif;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 150%;
+    color: #929292;
+  }
+
+  &__img {
+    transition: 2s;
+    &:hover {
+      transform: scale(1.4);
+    }
+  }
+}

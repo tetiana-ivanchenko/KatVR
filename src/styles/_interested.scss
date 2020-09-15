@@ -1,0 +1,71 @@
+.interested {
+  overflow: hidden;
+  height: 622px;
+  background: #05040b;
+  padding: 0 10%;
+  @media screen and (max-width: 1050px) {
+    text-align: center;
+    height: 100%;
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 1050px) {
+      flex-direction: column;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    @media screen and (max-width: 1050px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__label {
+    @extend %title;
+
+    margin-top: 80px;
+    margin-bottom: 0;
+
+    &--accent {
+      @extend %title-accent;
+    }
+  }
+
+  &__img {
+    transition: 2s;
+    &:hover {
+      transform: scale(1.4);
+    }
+  }
+
+  &__descr {
+    color: #05c2df;
+    margin-bottom: 80px;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "Balsamiq Sans", sans-serif;
+    position: relative;
+    left: 5%;
+  }
+
+  &__name {
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-family: "Balsamiq Sans", sans-serif;
+    color: #929292;
+  }
+}
